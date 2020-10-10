@@ -35,7 +35,7 @@ jobs:
 
       - name: Sync
         run: |
-          invidious-instances sync --replace invidious
+          invidious-instances sync --replace --timeout 1m invidious
         env:
           http_proxy: "socks5://localhost:9050"
           https_proxy: "socks5://localhost:9050"
